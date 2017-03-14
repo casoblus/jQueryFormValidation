@@ -33,6 +33,9 @@ $(document).ready(function() {
                 $(this).addClass('correctos');
             }
         });
+        if(valido === true) {
+            valido = confirm('¿Está seguro/a de enviar este formulario?');
+        }
         return valido;
     });
 });
